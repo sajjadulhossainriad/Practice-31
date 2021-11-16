@@ -1,0 +1,392 @@
+body,h1,h2,h3,h4,h5,h6,p,span,b{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/*Header CSS*/
+.header-section{
+    padding: 10px 0;
+    background-color: #fff;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+}
+.header-section .header-logo{}
+.header-section .header-logo .brand-name {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-top: 0px;
+    display: inline-block;
+}
+.header-section .header-logo a:hover{
+    color: #ddd;
+}
+.header-section .header-logo span {
+    background-color: blue;
+    color: #fff;
+    width: 44px;
+    height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 0px;
+    display: inline-block;
+}
+.header-section .header-logo i{
+    margin-top: 9px;
+}
+.header-section .header-menu{
+    text-align: left;
+    margin-bottom: 0;
+}
+.header-section .header-menu li{
+    display: inline-block;
+    position: relative;
+}
+.header-section .header-menu li a{
+    text-decoration: none;
+    color: #010101;
+    line-height: 50px;
+    font-size: 16px;
+    padding-left: 20px;
+}
+.header-menu li:hover > a{
+    color: #6278df;
+}
+.header-menu li .my-dropdown{
+    text-align: left;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    z-index: 5;
+    padding: 0;
+    transition: .5s;
+    text-align: left;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.header-menu li:hover .my-dropdown{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+.header-menu li .my-dropdown li{
+    display: block;
+}
+.header-menu li .my-dropdown li a{
+    font-size: 15px;
+    padding-left: 8px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+.header-section .button-design {
+    padding: 5px 19px;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: 600;
+    text-align: right;
+    margin-left: 43px;
+}
+.header-section .button-design:hover{
+    box-shadow: 3px -2px 20px -4px #6278df;
+}
+/*Banner CSS*/
+.banner-section{
+    background: url(https://mobirise.com/extensions/appamp/assets/images/mbr-10.jpg) rgba(0,0, 0, 0.4) no-repeat center center ;
+    background-size: cover;
+    padding: 200px 0;
+    margin-top: 0;
+    background-blend-mode: overlay;
+}
+.banner-text h4{
+    margin-top: -100px;
+}
+.banner-text h2{
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.form-div {
+    margin-top: 60px;
+}
+.form-div .my-input{
+    padding: 12px 0;
+    border: 1px solid rgb(72, 165, 56, 0.3) ;
+    
+}
+.form-div .my-input:focus{
+    box-shadow:3px -2px 20px -4px #6278df ;
+    cursor: none;
+}
+.form-div .my-submit {
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 65px;
+    background-color: #5ba533;
+    border: none;
+}
+.form-div .my-submit:hover{
+    background-color: #fff;
+    color: #6278df;
+    box-shadow:3px -2px 20px -4px #6278df ;
+}
+/*counter section*/
+.counted-number h2{
+    font-size: 60px;
+}
+/* About section*/
+.about-section{
+    background-color: #f7f9ff;
+}
+.about-text{
+    margin-top: 110px;
+}
+.about-text h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+.about-text p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 2rem;
+}
+/* Features section*/
+.feature-item{
+    height: 250px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+.left-img-item{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 4px 0 0 4px;
+}
+.left-img-item img{
+    height: 100%;
+    width: auto;
+    max-width: inherit;
+    position: relative;
+    left: -100px;
+}
+.right-text-item{
+    width: 60%;
+    padding: 20px;
+}
+.right-text-item h4{
+    font-size: 18px;
+}
+.right-text-item p{
+    font-size: 13px;
+}
+/*portfolio Section*/
+.portfolio-section{
+    background-color: #fff;
+}
+.portfolio-item{}
+.portfolio-item a{
+    position: relative;
+    display: block;
+}
+.portfolio-item a::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(98, 120, 223, 0.7);
+    opacity: 0;
+    visibility: hidden;
+}
+.portfolio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+/* pricing section*/
+.pricing-section {
+    background-color: #f7f9ff;
+}
+.pricing-item {
+    background-color: #fff;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    transition: .5s;
+}
+.pricing-item ul {
+    list-style-type: none;
+}
+.pricing-item ul li {
+    margin-bottom: 25px;
+    font-size: 19px;
+}
+.pricing-item ul li span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    color: #6278df;
+    font-size: 22px;
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.my-pricing-btn{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    padding: 10px 90px;
+    color: #6278df;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: none;
+}
+.my-pricing-btn:hover{
+    background-color: #000 !important;
+    color: #fff;
+}
+.pricing-item:hover .my-pricing-btn{
+    background-color: #6278df;
+    color: #fff;
+}
+/*Testimonial section*/
+.testimonial-section{}
+.testimonial-section span {
+    color: #f0f0f0;
+    font-size: 70px;
+}
+.user-info {
+    width: 200px;
+    margin: auto;
+}
+.user-info img {
+    width: 80px;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+}
+.user-details {
+    position: relative;
+    top: 16px;
+}
+.user-details h5 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.user-details p {
+    font-size: 16px;
+}
+/* About section*/
+.about-section{
+    background-color: #f7f9ff;
+}
+.about-item{
+    margin-top: 100px
+}
+.about-item .card{}
+.about-item .card img {
+    width: 100px;
+    height: auto;
+    margin-top: -55px;
+    margin-left: 12px;
+    margin-bottom: 0;
+}
+.about-item button{
+    font-weight: 500;
+}
+.about-item p{
+    font-size: 14px;
+}
+.about-item button:hover{
+    background-color: #383838;
+    color: #fff;
+}
+/* Contact secttion*/
+.contact-section{
+    background-color: #fff;
+}
+.contact-form{
+    background-color: #fff;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+}
+.contact-form .my-input {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+    padding: 20px 15px !important;
+}
+.contact-form .my-input:focus{
+    box-shadow: 2px 2px 20px #6278df ;
+}
+.contact-form .my-textarea{
+    padding: 20px 15px  !important;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.1);
+}
+.contact-form .my-textarea:focus{
+    border: 1px solid #6278df;
+    box-shadow: 2px 2px 20px #6278df ;
+}
+.contact-btn {
+    background-color: #6278df;
+    padding: 15px 25px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+.contact-btn:hover{
+    background-color: #fff;
+    color: #6278df;
+    border: 1px solid #6278df;
+    box-shadow: 2px 2px 20px #6278df;
+}
+/*getapp section*/
+.getapp-btn {
+    background-color: #fff;
+    color: #6fa83b;
+    padding: 12px 24px;
+    border: 1px solid #6fa83b;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+}
+.getapp-btn:hover{
+    background-color:#6fa83b ;
+    color: #fff;
+}
+.my-getapp-btn {
+    background-color: #6fa83b;
+    color: #fff;
+    padding: 12px 23px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s;
+    border: none;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64, 87, 191, 0.2);
+}
+.my-getapp-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+/* Footer section*/
+.footer-section{
+    background-color: #f7f9ff;
+}
+.footer-section a{
+    text-decoration: none;
+    color: #000;
+}
+.footer-section p{
+    font-size: 21px;
+}
